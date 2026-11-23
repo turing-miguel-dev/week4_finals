@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Your Cart | Deals Dough Hub Pizza House</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;800&family=Nunito+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a class="logo" href="index.html">
+            <img src="m1.jpg.png" alt="Deals Dough Hub Logo">
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">💛 About</a>
+            <a href="orders.html">🍕 Orders</a>
+            <a href="contact.html">📞 Contact</a>
+        </nav>
+
+        <p class="sidebar-tag">
+            Good Food,<br>
+            Good Moments! ❤️
+        </p>
+
+        <div class="sidebar-decoration"></div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <p>
+                🛒 REVIEW YOUR FAVORITES BEFORE PLACING YOUR ORDER
+            </p>
+
+            <a
+                class="btn btn-dark cart-button"
+                href="cart.html"
+                data-cart-button
+            >
+                🛒 Cart (<span data-cart-count>0</span>)
+
+                <span
+                    class="cart-notification-dot"
+                    data-cart-dot
+                ></span>
+            </a>
+
+        </header>
+
+
+        <!-- CART PAGE -->
+        <main class="page">
+
+            <span class="eyebrow">
+                YOUR FAVORITES ❤️
+            </span>
+
+            <h1 class="page-title">
+                Your Shopping <em>Cart</em> 🛒
+            </h1>
+
+            <p class="lead">
+                Check your selected items and review your order
+                before checkout.
+            </p>
+
+
+            <!-- CART ITEMS -->
+            <div
+                id="cart-items"
+                class="cart-list"
+                aria-live="polite"
+            >
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+            <section class="cart-summary">
+
+                <h2>🧾 Order Summary</h2>
+
+                <p class="total-line">
+                    Total:
+                    <strong id="cart-total">₱0.00</strong>
+                </p>
+
+                <div class="summary-actions">
+
+                    <button
+                        class="btn btn-outline"
+                        id="clear-cart"
+                        type="button"
+                    >
+                        🗑️ Clear Cart
+                    </button>
+
+                    <a class="btn" href="orders.html">
+                        ← Continue Shopping
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CHECKOUT SECTION -->
+            <section class="checkout panel">
+
+                <span class="eyebrow">
+                    ALMOST THERE! 🎉
+                </span>
+
+                <h2>Customer Details</h2>
+
+                <form id="checkout-form">
+
+                    <div class="fields">
+
+                        <!-- CUSTOMER NAME -->
+                        <label>
+                            👤 Name
+
+                            <input
+                                type="text"
+                                name="customerName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </label>
+
+
+                        <!-- PHONE NUMBER -->
+                        <label>
+                            📞 Phone Number
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="09XXXXXXXXX"
+                                required
+                            >
+                        </label>
+
+
+                        <!-- DELIVERY ADDRESS -->
+                        <label class="wide">
+                            📍 Delivery Address
+
+                            <input
+                                type="text"
+                                name="address"
+                                placeholder="Enter your delivery address"
+                            >
+                        </label>
+
+
+                        <!-- ORDER METHOD -->
+                        <div class="wide choice">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="method"
+                                    value="Pickup"
+                                    checked
+                                >
+                                🏪 Pickup
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="method"
+                                    value="Delivery"
+                                >
+                                🛵 Delivery
+                            </label>
+
+                        </div>
+
+
+                        <!-- SPECIAL NOTES -->
+                        <label class="wide">
+                            📝 Notes
+
+                            <textarea
+                                name="notes"
+                                rows="3"
+                                placeholder="Any special instructions?"
+                            ></textarea>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- PLACE ORDER BUTTON -->
+                    <button class="btn" type="submit">
+                        Place Order →
+                    </button>
+
+                    <p class="small-note">
+                        This demo prepares your order in your email app.
+                        It does not process online payments.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <a class="footer-logo" href="index.html">
+
+                <img
+                    src="m1.jpg.png"
+                    alt="Deals Dough Hub Logo"
+                >
+
+                <span>
+                    Deals Dough Hub
+                    <small>PIZZA HOUSE</small>
+                </span>
+
+            </a>
+
+            <span>
+                Freshly baked happiness, one slice at a time. 🍕
+            </span>
+
+            <small>
+                © 2026 Deals Dough Hub Pizza House.
+                All rights reserved.
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- NOTIFICATION -->
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact | Deals Dough Hub Pizza House</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;800&family=Nunito+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a class="logo" href="index.html">
+            <img src="m1.jpg.png" alt="Deals Dough Hub Logo">
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">💛 About</a>
+            <a href="orders.html">🍕 Orders</a>
+            <a href="contact.html" class="active">📞 Contact</a>
+        </nav>
+
+        <p class="sidebar-tag">
+            Good Food,<br>
+            Good Moments! ❤️
+        </p>
+
+        <div class="sidebar-decoration"></div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <p>
+                🍕 HOT, FRESH &amp; MADE WITH LOVE • ORDER YOUR FAVORITES TODAY
+            </p>
+
+            <a
+                class="btn btn-dark cart-button"
+                href="cart.html"
+                data-cart-button
+            >
+                🛒 Cart (<span data-cart-count>0</span>)
+
+                <span
+                    class="cart-notification-dot"
+                    data-cart-dot
+                ></span>
+            </a>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <main class="page">
+
+            <!-- CONTACT HEADING -->
+            <section class="contact-heading">
+
+                <span class="eyebrow">
+                    WE'D LOVE TO HEAR FROM YOU ❤️
+                </span>
+
+                <h1 class="page-title">
+                    Get in <em>Touch!</em> 📞
+                </h1>
+
+                <p class="lead">
+                    Questions, feedback, or a special request?
+                    Send us a message.
+                </p>
+
+            </section>
+
+
+            <!-- CONTACT LAYOUT -->
+            <div class="contact-layout">
+
+                <!-- CONTACT FORM -->
+                <form
+                    class="panel contact-form"
+                    action="mailto:hello@dealsdoughhub.example"
+                    method="post"
+                    enctype="text/plain"
+                >
+
+                    <h2>✉️ Send Us a Message</h2>
+
+                    <!-- NAME -->
+                    <label>
+                        👤 Your Name
+
+                        <input
+                            type="text"
+                            name="Name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </label>
+
+
+                    <!-- EMAIL -->
+                    <label>
+                        📧 Email Address
+
+                        <input
+                            type="email"
+                            name="Email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </label>
+
+
+                    <!-- MESSAGE -->
+                    <label>
+                        📝 Your Message
+
+                        <textarea
+                            name="Message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+                    </label>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <button class="btn" type="submit">
+                        Send Message →
+                    </button>
+
+                </form>
+
+
+                <!-- CONTACT DETAILS -->
+                <aside class="contact-details">
+
+                    <!-- ADDRESS -->
+                    <div class="panel">
+
+                        <span class="info-icon">📍</span>
+
+                        <h3>Find Us</h3>
+
+                        <p>
+                            Your street address here
+                        </p>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="panel">
+
+                        <span class="info-icon">📞</span>
+
+                        <h3>Call Us</h3>
+
+                        <p>
+                            Your phone number here
+                        </p>
+
+                    </div>
+
+
+                    <!-- OPENING HOURS -->
+                    <div class="panel">
+
+                        <span class="info-icon">🕒</span>
+
+                        <h3>Opening Hours</h3>
+
+                        <p>
+                            Every day<br>
+                            10:00 AM – 9:00 PM
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+
+            <!-- ABOUT BANNER -->
+            <section class="about-banner">
+
+                <h2>Good Food, Good Moments! ❤️</h2>
+
+                <p>
+                    Planning a pizza day?
+                    Let us help you make it special.
+                </p>
+
+                <a href="orders.html" class="btn btn-light">
+                    🍕 Start an Order →
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <a class="footer-logo" href="index.html">
+
+                <img src="m1.jpg.png" alt="Logo">
+
+                <span>
+                    Deals Dough Hub
+                    <small>PIZZA HOUSE</small>
+                </span>
+
+            </a>
+
+            <span>
+                Freshly baked happiness, one slice at a time. 🍕
+            </span>
+
+            <small>
+                © 2026 Deals Dough Hub Pizza House.
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+</body>
+</html>

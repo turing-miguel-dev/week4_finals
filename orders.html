@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Orders | Deals Dough Hub Pizza House</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;800&family=Nunito+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a class="logo" href="index.html">
+            <img src="m1.jpg.png" alt="Deals Dough Hub Logo">
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">💛 About</a>
+            <a href="orders.html" class="active">🍕 Orders</a>
+            <a href="contact.html">📞 Contact</a>
+        </nav>
+
+        <p class="sidebar-tag">
+            Good Food,<br>
+            Good Moments! ❤️
+        </p>
+
+        <div class="sidebar-decoration"></div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <p>
+                🍕 HOT, FRESH &amp; MADE WITH LOVE • ORDER YOUR FAVORITES TODAY
+            </p>
+
+            <a
+                class="btn btn-dark cart-button"
+                href="cart.html"
+                data-cart-button
+            >
+                🛒 Cart (<span data-cart-count>0</span>)
+
+                <span
+                    class="cart-notification-dot"
+                    data-cart-dot
+                ></span>
+            </a>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <main class="page">
+
+            <!-- ORDERS HEADING -->
+            <section class="orders-heading">
+
+                <span class="eyebrow">
+                    FRESH FROM OUR KITCHEN
+                </span>
+
+                <h1 class="page-title">
+                    Choose Your <em>Favorites</em> 🍕
+                </h1>
+
+                <p class="lead">
+                    Browse our delicious menu, choose your favorites,
+                    and add them to your cart!
+                </p>
+
+            </section>
+
+
+            <!-- PIZZA FOR SHARING -->
+            <section id="sharing" class="menu-section">
+
+                <h2>🍕 Pizza for Sharing</h2>
+
+                <div class="product-grid">
+
+                    <!-- CLASSIC PEPPERONI -->
+                    <article class="product-card">
+
+                        <img
+                            src="peperoni.webp"
+                            alt="Classic Pepperoni Pizza"
+                        >
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                BEST SELLER
+                            </span>
+
+                            <h3>Classic Pepperoni (Large)</h3>
+
+                            <p>
+                                Pepperoni, mozzarella, house tomato sauce.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱499.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="pepperoni"
+                                    data-name="Classic Pepperoni (Large)"
+                                    data-price="499"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GARDEN VEGGIE -->
+                    <article class="product-card">
+
+                        <img
+                            src="veg.webp"
+                            alt="Garden Veggie Pizza"
+                        >
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                FRESH PICK
+                            </span>
+
+                            <h3>Garden Veggie (Large)</h3>
+
+                            <p>
+                                Peppers, olives, mushrooms, onions.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱459.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="veggie"
+                                    data-name="Garden Veggie (Large)"
+                                    data-price="459"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EXTRA CHEESY -->
+                    <article class="product-card">
+
+                        <img
+                            src="cheese.webp"
+                            alt="Extra Cheesy Pizza"
+                        >
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                CHEESE LOVERS
+                            </span>
+
+                            <h3>Extra Cheesy (Large)</h3>
+
+                            <p>
+                                Four-cheese blend with basil.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱529.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="cheesy"
+                                    data-name="Extra Cheesy (Large)"
+                                    data-price="529"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- PASTA -->
+            <section id="pasta" class="menu-section">
+
+                <h2>🍝 Pasta for Me</h2>
+
+                <div class="product-grid">
+
+                    <!-- CARBONARA -->
+                    <article class="product-card">
+
+                        <img
+                            src="m8.jpeg"
+                            alt="Creamy Carbonara"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Creamy Carbonara</h3>
+
+                            <p>
+                                Cream sauce, bacon, parmesan.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱199.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="carbonara"
+                                    data-name="Creamy Carbonara"
+                                    data-price="199"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BAKED SPAGHETTI -->
+                    <article class="product-card">
+
+                        <img
+                            src="pasta1.webp"
+                            alt="Baked Spaghetti"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Baked Spaghetti</h3>
+
+                            <p>
+                                Tomato meat sauce, melted cheese.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱189.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="spaghetti"
+                                    data-name="Baked Spaghetti"
+                                    data-price="189"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- SOLO MEALS -->
+            <section id="solo" class="menu-section">
+
+                <h2>🍕 Solo Meal</h2>
+
+                <div class="product-grid">
+
+                    <!-- PERSONAL PEPPERONI -->
+                    <article class="product-card">
+
+                        <img
+                            src="pp1.webp"
+                            alt="Personal Pepperoni"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Personal Pepperoni</h3>
+
+                            <p>
+                                8-inch pizza with a drink.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱169.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="personal-pepperoni"
+                                    data-name="Personal Pepperoni"
+                                    data-price="169"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PERSONAL CHEESE -->
+                    <article class="product-card">
+
+                        <img
+                            src="c1.webp"
+                            alt="Personal Cheese"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Personal Cheese</h3>
+
+                            <p>
+                                8-inch pizza with a drink.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱159.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="personal-cheese"
+                                    data-name="Personal Cheese"
+                                    data-price="159"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- SIDES AND DESSERTS -->
+            <section id="sides" class="menu-section">
+
+                <h2>🍟 Sides &amp; Desserts</h2>
+
+                <div class="product-grid">
+
+                    <!-- GARLIC BREAD -->
+                    <article class="product-card">
+
+                        <img
+                            src="g1.webp"
+                            alt="Garlic Bread"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Garlic Bread</h3>
+
+                            <p>
+                                Six toasted slices with butter.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱99.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="garlic-bread"
+                                    data-name="Garlic Bread"
+                                    data-price="99"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CHICKEN WINGS -->
+                    <article class="product-card">
+
+                        <img
+                            src="ch1.webp"
+                            alt="Chicken Wings"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Chicken Wings</h3>
+
+                            <p>
+                                Six pieces, your choice of glaze.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱189.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="chicken-wings"
+                                    data-name="Chicken Wings"
+                                    data-price="189"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CINNAMON ROLLS -->
+                    <article class="product-card">
+
+                        <img
+                            src="ci1.webp"
+                            alt="Cinnamon Rolls"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>Cinnamon Rolls</h3>
+
+                            <p>
+                                Four warm rolls with icing.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>₱119.00</strong>
+
+                                <button
+                                    class="btn btn-sm add-to-cart"
+                                    data-id="cinnamon-rolls"
+                                    data-name="Cinnamon Rolls"
+                                    data-price="119"
+                                >
+                                    Add to Cart +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- CART CALL TO ACTION -->
+            <div class="cart-cta">
+
+                <p>
+                    ❤️ Your favorites are waiting!
+                </p>
+
+                <a class="btn" href="cart.html">
+                    🛒 View Cart &amp; Checkout →
+                </a>
+
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <a class="footer-logo" href="index.html">
+
+                <img src="m1.jpg.png" alt="Logo">
+
+                <span>
+                    Deals Dough Hub
+                    <small>PIZZA HOUSE</small>
+                </span>
+
+            </a>
+
+            <span>
+                Freshly baked happiness, one slice at a time. 🍕
+            </span>
+
+            <small>
+                © 2026 Deals Dough Hub Pizza House.
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+</body>
+</html>
