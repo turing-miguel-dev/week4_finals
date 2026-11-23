@@ -426,8 +426,3 @@ document.addEventListener("DOMContentLoaded", function () {
         dot.classList.toggle("active", count > 0);
     });
 }
-
-
-
-
-
